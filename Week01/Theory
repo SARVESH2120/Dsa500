@@ -1,0 +1,42 @@
+
+
+--Types of programming language
+functional procedural oop
+
+--Staic and Dynamic languages
+a(refrence variable)(stack) = 10(object)(heap)
+
+--more than one refrence variable point to the same object
+--if anyone of these refrence variable cahnege these object then it is going to change for all
+
+--pass by refrence value only java has..
+
+
+garbage collection- object with have no refrence variable pointing on it, it would remove by the garbage collection
+
+
+
+About JAVA
+
+java file have a extension of .java
+.java file -> .class file(byte code) -> machine code
+JVM to run byte code 
+Java (byte code) is independet but JVM is dependent
+
+
+
+JDK = JRE + developemt tools
+    JRE  = JVM + Library classes
+        JVM
+            JIT
+
+
+
+How JVM works
+    -LOading(read .class file)(and obj are created in the heap memory)
+    -Linking(allocation of memory to variable and default values are given)
+    -Initialzation(statcic varible doesn't depend on the object of the classes)
+
+
+JIT(makes a execution bit faster)
+
