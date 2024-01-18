@@ -1,0 +1,25 @@
+public static void ShiftArray(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many no. want to store in array");
+        int n = sc.nextInt();
+        System.out.println("Enter a no.");
+        int[] arr = new int[n+1];
+        for(int i=0 ; i<n ; i++){
+            arr[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString((arr)));
+        System.out.println("Enter the idx postion of an array to store a value");
+        int pos = sc.nextInt();
+        System.out.println("Enter thr value you store");
+        int value = sc.nextInt();
+
+        for(int i = n-1 ; i>= pos-1 ; i--){
+            arr[i+1]= arr[i];
+        }
+        arr[pos-1] = value;
+        System.out.println("New array");
+        System.out.println(Arrays.toString(arr));
+
+    }
+
+   
