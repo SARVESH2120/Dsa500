@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Scaler {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> arrList = new ArrayList<>();
+        int N = sc.nextInt();
+        for(int i= 1 ; i<=N ; i++){
+            Integer num = sc.nextInt();
+            arrList.add(num);
+        }
+
+        for(int x : arrList){
+            System.out.print( x + " ");
+        }
+
+    }
+}
