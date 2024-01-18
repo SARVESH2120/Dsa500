@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Scaler {
+
+    public static int[] searchAll(int[] arr, int element){
+        int cnt = 0 ;
+        for(int x : arr){
+            if(x == element){
+                cnt++;
+            }
+        }
+        //create a new array of lenght count
+        int[] output = new int[cnt];
+        int j=0;
+        for(int i = 0 ; i<arr.length ; i++){
+            if(arr[i] == element){
+                output[j] = i;
+                j++;
+            }
+        }
+        return output;
+    }
+    
+    public static void main(String[] args) {
+ 
+       int arr[] = {45,54,45,64,45};
+       int[] output = searchAll(arr, 45);
+       System.out.println(Arrays.toString(arr));
+       System.out.println(Arrays.toString(output));
+       
+
+    }
+}
