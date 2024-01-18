@@ -1,0 +1,29 @@
+public static void UserInput(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many you want to enter in a n array");
+        int n = sc.nextInt();
+        System.out.println("Enter a number");
+        int [] marks = new int[n];
+        for(int i= 0 ; i<marks.length ; i++){
+            marks[i] = sc.nextInt();
+        }
+        System.out.println("Arrays is : ");
+        System.out.println(Arrays.toString(marks));
+        int sum = 0 ; 
+        for(int x: marks){
+            sum+= x;
+        }
+        System.out.println("Sum of array is: ");
+        System.out.println(sum);
+        
+    }
+
+    public static void SumOfElementinArray(){
+        UserInput();
+        
+    }
+
+
+
+
+   
